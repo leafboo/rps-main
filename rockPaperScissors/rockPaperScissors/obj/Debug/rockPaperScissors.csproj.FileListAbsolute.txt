@@ -1,0 +1,11 @@
+C:\Users\Desktop\Desktop\rps-school-main\rockPaperScissors\rockPaperScissors\bin\Debug\rockPaperScissors.exe.config
+C:\Users\Desktop\Desktop\rps-school-main\rockPaperScissors\rockPaperScissors\bin\Debug\rockPaperScissors.exe
+C:\Users\Desktop\Desktop\rps-school-main\rockPaperScissors\rockPaperScissors\bin\Debug\rockPaperScissors.pdb
+C:\Users\Desktop\Desktop\rps-school-main\rockPaperScissors\rockPaperScissors\obj\Debug\rockPaperScissors.csproj.AssemblyReference.cache
+C:\Users\Desktop\Desktop\rps-school-main\rockPaperScissors\rockPaperScissors\obj\Debug\rockPaperScissors.Start.resources
+C:\Users\Desktop\Desktop\rps-school-main\rockPaperScissors\rockPaperScissors\obj\Debug\rockPaperScissors.Properties.Resources.resources
+C:\Users\Desktop\Desktop\rps-school-main\rockPaperScissors\rockPaperScissors\obj\Debug\rockPaperScissors.csproj.GenerateResource.cache
+C:\Users\Desktop\Desktop\rps-school-main\rockPaperScissors\rockPaperScissors\obj\Debug\rockPaperScissors.csproj.CoreCompileInputs.cache
+C:\Users\Desktop\Desktop\rps-school-main\rockPaperScissors\rockPaperScissors\obj\Debug\rockPaperScissors.exe
+C:\Users\Desktop\Desktop\rps-school-main\rockPaperScissors\rockPaperScissors\obj\Debug\rockPaperScissors.pdb
+C:\Users\Desktop\Desktop\rps-school-main\rockPaperScissors\rockPaperScissors\obj\Debug\rockPaperScissors.MainWindow.resources
