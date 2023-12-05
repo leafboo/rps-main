@@ -20,9 +20,12 @@ namespace rockPaperScissors
         int computerScore;
         int playerScore;
         string draw;
-        public MainWindow()
+        string gameMode;
+
+        public MainWindow(string gameMode)
         {
             InitializeComponent();
+            this.gameMode = gameMode;
         }
 
        
@@ -84,6 +87,9 @@ namespace rockPaperScissors
             if (computerChoice == playerChoice)
             {
                 draw = " Draw!";
+                End end = new End();
+                end.Show();
+                Visible = false;
             }
             else if (playerChoice == "R" && computerChoice == "P" || playerChoice == "P" && computerChoice == "S" || playerChoice == "S" && computerChoice == "R")
             {
@@ -98,6 +104,11 @@ namespace rockPaperScissors
             lblComputerResult.Text = "Computer Score" + computerScore;
             lblPlayerResult.Text = "Player Score" + playerScore;
             lblDraw.Text = draw;
+
+            if (gameMode == "best of")
+            {
+                
+            }
         }
         private void label3_Click(object sender, EventArgs e)
         {

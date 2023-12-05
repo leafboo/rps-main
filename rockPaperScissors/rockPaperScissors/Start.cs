@@ -19,14 +19,16 @@ namespace rockPaperScissors
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();   
+            string gameMode = "endless";
+            MainWindow mainWindow = new MainWindow(gameMode);   
             mainWindow.Show();
             Visible = false;
         }
 
         private void btnBestOf_Click(object sender, EventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
+            string gameMode = "best of";
+            MainWindow mainWindow = new MainWindow(gameMode);
             mainWindow.Show();
             Visible = false;
         }
