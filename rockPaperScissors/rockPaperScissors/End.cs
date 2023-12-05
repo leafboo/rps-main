@@ -12,9 +12,13 @@ namespace rockPaperScissors
 {
     public partial class End : Form
     {
-        public End()
+        string result;
+
+        public End(string result)
         {
+            this.result = result;
             InitializeComponent();
+            lblResult.Text = result;
         }
 
         private void btnNo_Click(object sender, EventArgs e)

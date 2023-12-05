@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblResult = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnYes = new System.Windows.Forms.Button();
             this.btnNo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // lblResult
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(200, 114);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "You lose";
+            this.lblResult.AutoSize = true;
+            this.lblResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResult.Location = new System.Drawing.Point(219, 112);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(47, 24);
+            this.lblResult.TabIndex = 0;
+            this.lblResult.Text = "You";
             // 
             // label2
             // 
@@ -82,7 +82,7 @@
             this.Controls.Add(this.btnNo);
             this.Controls.Add(this.btnYes);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblResult);
             this.Name = "End";
             this.Text = "End";
             this.ResumeLayout(false);
@@ -92,7 +92,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblResult;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnYes;
         private System.Windows.Forms.Button btnNo;

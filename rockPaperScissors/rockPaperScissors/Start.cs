@@ -27,9 +27,8 @@ namespace rockPaperScissors
 
         private void btnBestOf_Click(object sender, EventArgs e)
         {
-            string gameMode = "best of";
-            MainWindow mainWindow = new MainWindow(gameMode);
-            mainWindow.Show();
+            PickBestOf pickBestOf = new PickBestOf();
+            pickBestOf.Show();
             Visible = false;
         }
     }

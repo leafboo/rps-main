@@ -10,3 +10,4 @@ C:\Users\Desktop\Desktop\rps-school-main\rockPaperScissors\rockPaperScissors\obj
 C:\Users\Desktop\Desktop\rps-school-main\rockPaperScissors\rockPaperScissors\obj\Debug\rockPaperScissors.pdb
 C:\Users\Desktop\Desktop\rps-school-main\rockPaperScissors\rockPaperScissors\obj\Debug\rockPaperScissors.MainWindow.resources
 C:\Users\Desktop\Desktop\rps-school-main\rockPaperScissors\rockPaperScissors\obj\Debug\rockPaperScissors.End.resources
+C:\Users\Desktop\Desktop\rps-school-main\rockPaperScissors\rockPaperScissors\obj\Debug\rockPaperScissors.PickBestOf.resources

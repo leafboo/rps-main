@@ -19,6 +19,7 @@ namespace rockPaperScissors
         Random random = new Random();
         int computerScore;
         int playerScore;
+        int bestOf = 0;
         string draw;
         string gameMode;
 
@@ -26,6 +27,12 @@ namespace rockPaperScissors
         {
             InitializeComponent();
             this.gameMode = gameMode;
+        }
+        public MainWindow(string gameMode, int bestOf)
+        {
+            InitializeComponent();
+            this.gameMode = gameMode;
+            this.bestOf = bestOf;
         }
 
        
@@ -87,9 +94,6 @@ namespace rockPaperScissors
             if (computerChoice == playerChoice)
             {
                 draw = " Draw!";
-                End end = new End();
-                end.Show();
-                Visible = false;
             }
             else if (playerChoice == "R" && computerChoice == "P" || playerChoice == "P" && computerChoice == "S" || playerChoice == "S" && computerChoice == "R")
             {
@@ -105,10 +109,77 @@ namespace rockPaperScissors
             lblPlayerResult.Text = "Player Score" + playerScore;
             lblDraw.Text = draw;
 
-            if (gameMode == "best of")
+            if (gameMode == "bestOf")
             {
-                
+                string result = "";
+                if (bestOf == 5)
+                {
+                    if(playerScore == 5)
+                    {
+
+                        executeAfterTimeWin(result);
+                    } 
+                    else if (computerScore == 5)
+                    {
+                        executeAfterTimeLose(result);
+                    }
+                } 
+                else if (bestOf == 10)
+                {
+                    if (playerScore == 10)
+                    {
+                        executeAfterTimeWin(result);
+                    }
+                    else if (computerScore == 10)
+                    {
+                        executeAfterTimeLose(result);
+                    }
+                } 
+                else if (bestOf == 20)
+                {
+                    if (playerScore == 20)
+                    {
+                        executeAfterTimeWin(result);
+                    }
+                    else if (computerScore == 20)
+                    {
+                        executeAfterTimeLose(result);
+                    }
+                }
             }
+           
+        }
+        private void executeAfterTimeWin(string result)
+        {
+            Timer delayTimer = new Timer();
+            delayTimer.Interval = 500; // 2000 milliseconds = 2 seconds
+            delayTimer.Tick += (sender, e) =>
+            {
+                delayTimer.Stop(); // Stop the timer
+                                   // Code to execute after the 2-second delay
+                result = "You win!";
+                End end = new End(result);
+                end.Show();
+                Visible = false;
+            };
+
+            delayTimer.Start(); // Start the timer
+        }
+        private void executeAfterTimeLose(string result)
+        {
+            Timer delayTimer = new Timer();
+            delayTimer.Interval = 500; // 2000 milliseconds = 2 seconds
+            delayTimer.Tick += (sender, e) =>
+            {
+                delayTimer.Stop(); // Stop the timer
+                                   // Code to execute after the 2-second delay
+                result = "You Lose!";
+                End end = new End(result);
+                end.Show();
+                Visible = false;
+            };
+
+            delayTimer.Start(); // Start the timer
         }
         private void label3_Click(object sender, EventArgs e)
         {
