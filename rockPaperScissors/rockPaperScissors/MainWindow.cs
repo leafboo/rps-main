@@ -109,8 +109,7 @@ namespace rockPaperScissors
                             break;
                     }
 
-                    // Start the timer for the delay before checkGame()
-                    StartCheckGameTimer();
+                    
                 }
             };
 
@@ -161,8 +160,7 @@ namespace rockPaperScissors
                             break;
                     }
 
-                    // Start the timer for the delay before checkGame()
-                    StartCheckGameTimer();
+                    
                 }
             };
 
@@ -187,8 +185,8 @@ namespace rockPaperScissors
                 playerScore++;
                 draw = null;
             }
-            lblComputerResult.Text = "Computer Score" + computerScore;
-            lblPlayerResult.Text = "Player Score" + playerScore;
+            lblComputerResult.Text = "" + computerScore;
+            lblPlayerResult.Text = "" + playerScore;
             lblDraw.Text = draw;
 
             if (gameMode == "bestOf")
@@ -247,21 +245,7 @@ namespace rockPaperScissors
 
             delayTimer.Start(); // Start the timer
         }
-        private void StartCheckGameTimer()
-        {
-            Timer checkGameTimer = new Timer();
-            checkGameTimer.Interval = 1250; // Set the interval to 1250 milliseconds (1.25 seconds)
-            checkGameTimer.Tick += (sender, e) =>
-            {
-                checkGameTimer.Stop(); // Stop the timer
-
-                // Code to execute after the 1.25-second delay
-                checkGame();
-            };
-
-            // Start the timer
-            checkGameTimer.Start();
-        }
+        
         private void executeAfterTimeLose(string result)
         {
             Timer delayTimer = new Timer();

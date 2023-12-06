@@ -72,23 +72,27 @@
             // lblPlayerResult
             // 
             this.lblPlayerResult.AutoSize = true;
-            this.lblPlayerResult.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblPlayerResult.Location = new System.Drawing.Point(42, 117);
+            this.lblPlayerResult.BackColor = System.Drawing.Color.Transparent;
+            this.lblPlayerResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayerResult.ForeColor = System.Drawing.Color.White;
+            this.lblPlayerResult.Location = new System.Drawing.Point(115, 82);
             this.lblPlayerResult.Name = "lblPlayerResult";
-            this.lblPlayerResult.Size = new System.Drawing.Size(73, 13);
+            this.lblPlayerResult.Size = new System.Drawing.Size(26, 18);
             this.lblPlayerResult.TabIndex = 7;
-            this.lblPlayerResult.Text = "Player Score: ";
+            this.lblPlayerResult.Text = "---";
             this.lblPlayerResult.Click += new System.EventHandler(this.label3_Click);
             // 
             // lblComputerResult
             // 
             this.lblComputerResult.AutoSize = true;
-            this.lblComputerResult.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblComputerResult.Location = new System.Drawing.Point(790, 117);
+            this.lblComputerResult.BackColor = System.Drawing.Color.Transparent;
+            this.lblComputerResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblComputerResult.ForeColor = System.Drawing.Color.Transparent;
+            this.lblComputerResult.Location = new System.Drawing.Point(854, 82);
             this.lblComputerResult.Name = "lblComputerResult";
-            this.lblComputerResult.Size = new System.Drawing.Size(89, 13);
+            this.lblComputerResult.Size = new System.Drawing.Size(31, 18);
             this.lblComputerResult.TabIndex = 8;
-            this.lblComputerResult.Text = "Computer Score: ";
+            this.lblComputerResult.Text = "--- ";
             // 
             // lblDraw
             // 
