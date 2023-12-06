@@ -124,17 +124,17 @@
   <data name="background-best-of" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\background-best-of.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gamemode-dark-mode" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gamemode-dark-mode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rock-emoji" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rock-emoji.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="paper-button(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\paper-button(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="gamemode-dark-mode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gamemode-dark-mode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="scissors-blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\scissors-blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="rock-emoji" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rock-emoji.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="scissors-pink" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\scissors-pink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,13 +142,16 @@
   <data name="background-dark-mode" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\background-dark-mode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="scissor-button(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\scissor-button(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="rock-button(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rock-button(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="scissor-button(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\scissor-button(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="menu-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

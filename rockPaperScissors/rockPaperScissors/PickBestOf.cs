@@ -51,5 +51,12 @@ namespace rockPaperScissors
         {
             
         }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            Start start = new Start();
+            start.Show();
+            Visible = false;
+        }
     }
 }

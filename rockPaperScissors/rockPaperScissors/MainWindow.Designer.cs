@@ -38,14 +38,15 @@
             this.lblDraw = new System.Windows.Forms.Label();
             this.btnChangeGameMode = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnChangeMode = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnMenu = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.PLAYER_PIC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CPU_PIC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
             this.SuspendLayout();
             // 
             // PLAYER_PIC
@@ -71,6 +72,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(201, 102);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(36, 13);
@@ -80,6 +82,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(551, 102);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 13);
@@ -89,6 +92,7 @@
             // lblPlayerResult
             // 
             this.lblPlayerResult.AutoSize = true;
+            this.lblPlayerResult.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblPlayerResult.Location = new System.Drawing.Point(176, 252);
             this.lblPlayerResult.Name = "lblPlayerResult";
             this.lblPlayerResult.Size = new System.Drawing.Size(73, 13);
@@ -99,6 +103,7 @@
             // lblComputerResult
             // 
             this.lblComputerResult.AutoSize = true;
+            this.lblComputerResult.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblComputerResult.Location = new System.Drawing.Point(542, 261);
             this.lblComputerResult.Name = "lblComputerResult";
             this.lblComputerResult.Size = new System.Drawing.Size(89, 13);
@@ -108,6 +113,7 @@
             // lblDraw
             // 
             this.lblDraw.AutoSize = true;
+            this.lblDraw.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblDraw.Location = new System.Drawing.Point(383, 183);
             this.lblDraw.Name = "lblDraw";
             this.lblDraw.Size = new System.Drawing.Size(16, 13);
@@ -137,16 +143,6 @@
             this.pictureBox1.Tag = "P";
             this.pictureBox1.Click += new System.EventHandler(this.MakeChoiceEvent);
             // 
-            // btnChangeMode
-            // 
-            this.btnChangeMode.Location = new System.Drawing.Point(533, 12);
-            this.btnChangeMode.Name = "btnChangeMode";
-            this.btnChangeMode.Size = new System.Drawing.Size(160, 23);
-            this.btnChangeMode.TabIndex = 12;
-            this.btnChangeMode.Text = "Change Game mode";
-            this.btnChangeMode.UseVisualStyleBackColor = true;
-            this.btnChangeMode.Click += new System.EventHandler(this.btnChangeMode_Click);
-            // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
@@ -173,16 +169,29 @@
             this.pictureBox3.Tag = "S";
             this.pictureBox3.Click += new System.EventHandler(this.MakeChoiceEvent);
             // 
+            // btnMenu
+            // 
+            this.btnMenu.BackColor = System.Drawing.Color.Transparent;
+            this.btnMenu.Image = global::rockPaperScissors.Properties.Resources.menu_button;
+            this.btnMenu.Location = new System.Drawing.Point(584, -3);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(124, 68);
+            this.btnMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMenu.TabIndex = 15;
+            this.btnMenu.TabStop = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(705, 415);
+            this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.btnChangeMode);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnChangeGameMode);
             this.Controls.Add(this.lblDraw);
@@ -194,6 +203,7 @@
             this.Controls.Add(this.PLAYER_PIC);
             this.DoubleBuffered = true;
             this.Name = "MainWindow";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainWindow";
             this.Load += new System.EventHandler(this.MainWindow_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PLAYER_PIC)).EndInit();
@@ -201,6 +211,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -217,8 +228,8 @@
         private System.Windows.Forms.Label lblDraw;
         private System.Windows.Forms.Button btnChangeGameMode;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnChangeMode;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox btnMenu;
     }
 }

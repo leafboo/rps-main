@@ -56,6 +56,7 @@
             this.Controls.Add(this.pictureBox2);
             this.DoubleBuffered = true;
             this.Name = "Start";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Start";
             this.Load += new System.EventHandler(this.Start_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

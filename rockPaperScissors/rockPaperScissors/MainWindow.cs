@@ -198,8 +198,13 @@ namespace rockPaperScissors
 
         private void btnChangeMode_Click(object sender, EventArgs e)
         {
-            PickGameMode pickGameMode = new PickGameMode();
-            pickGameMode.Show();    
+            
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            Start start = new Start();
+            start.Show();
             Visible = false;
         }
     }

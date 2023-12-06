@@ -32,5 +32,12 @@ namespace rockPaperScissors
             pickBestOf.Show();
             Visible = false;
         }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            Start start = new Start();
+            start.Show();
+            Visible = false;
+        }
     }
 }

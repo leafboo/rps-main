@@ -149,5 +149,8 @@
   <ItemGroup>
     <None Include="Resources\scissor-button%281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-button.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
