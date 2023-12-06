@@ -28,60 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnEndless = new System.Windows.Forms.Button();
-            this.btnBestOf = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Start));
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnEndless
+            // pictureBox2
             // 
-            this.btnEndless.Location = new System.Drawing.Point(107, 161);
-            this.btnEndless.Name = "btnEndless";
-            this.btnEndless.Size = new System.Drawing.Size(75, 23);
-            this.btnEndless.TabIndex = 0;
-            this.btnEndless.Text = "Endless";
-            this.btnEndless.UseVisualStyleBackColor = true;
-            this.btnEndless.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnBestOf
-            // 
-            this.btnBestOf.Location = new System.Drawing.Point(279, 161);
-            this.btnBestOf.Name = "btnBestOf";
-            this.btnBestOf.Size = new System.Drawing.Size(75, 23);
-            this.btnBestOf.TabIndex = 1;
-            this.btnBestOf.Text = "Best of";
-            this.btnBestOf.UseVisualStyleBackColor = true;
-            this.btnBestOf.Click += new System.EventHandler(this.btnBestOf_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(187, 96);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 13);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Pick game mode";
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(298, 230);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(117, 59);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 11;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(495, 280);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnBestOf);
-            this.Controls.Add(this.btnEndless);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackgroundImage = global::rockPaperScissors.Properties.Resources.background_dark_mode;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(705, 415);
+            this.Controls.Add(this.pictureBox2);
+            this.DoubleBuffered = true;
             this.Name = "Start";
             this.Text = "Start";
+            this.Load += new System.EventHandler(this.Start_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnEndless;
-        private System.Windows.Forms.Button btnBestOf;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

@@ -64,6 +64,12 @@
     <Compile Include="PickBestOf.Designer.cs">
       <DependentUpon>PickBestOf.cs</DependentUpon>
     </Compile>
+    <Compile Include="PickGameMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PickGameMode.Designer.cs">
+      <DependentUpon>PickGameMode.cs</DependentUpon>
+    </Compile>
     <Compile Include="Start.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PickBestOf.resx">
       <DependentUpon>PickBestOf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PickGameMode.resx">
+      <DependentUpon>PickGameMode.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Start.resx">
       <DependentUpon>Start.cs</DependentUpon>
@@ -118,6 +127,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\rock-emoji.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background-dark-mode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gamemode-dark-mode.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

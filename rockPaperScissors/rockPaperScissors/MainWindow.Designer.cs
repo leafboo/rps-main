@@ -38,6 +38,7 @@
             this.lblPlayerResult = new System.Windows.Forms.Label();
             this.lblComputerResult = new System.Windows.Forms.Label();
             this.lblDraw = new System.Windows.Forms.Label();
+            this.btnChangeGameMode = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PLAYER_PIC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CPU_PIC)).BeginInit();
             this.SuspendLayout();
@@ -142,11 +143,22 @@
             this.lblDraw.TabIndex = 9;
             this.lblDraw.Text = "---";
             // 
+            // btnChangeGameMode
+            // 
+            this.btnChangeGameMode.Location = new System.Drawing.Point(645, 415);
+            this.btnChangeGameMode.Name = "btnChangeGameMode";
+            this.btnChangeGameMode.Size = new System.Drawing.Size(127, 23);
+            this.btnChangeGameMode.TabIndex = 10;
+            this.btnChangeGameMode.Text = "Change Game mode";
+            this.btnChangeGameMode.UseVisualStyleBackColor = true;
+            this.btnChangeGameMode.Click += new System.EventHandler(this.btnChangeGameMode_Click);
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnChangeGameMode);
             this.Controls.Add(this.lblDraw);
             this.Controls.Add(this.lblComputerResult);
             this.Controls.Add(this.lblPlayerResult);
@@ -179,5 +191,6 @@
         private System.Windows.Forms.Label lblPlayerResult;
         private System.Windows.Forms.Label lblComputerResult;
         private System.Windows.Forms.Label lblDraw;
+        private System.Windows.Forms.Button btnChangeGameMode;
     }
 }

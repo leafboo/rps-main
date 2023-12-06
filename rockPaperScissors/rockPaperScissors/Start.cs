@@ -12,24 +12,34 @@ namespace rockPaperScissors
 {
     public partial class Start : Form
     {
+        
         public Start()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnStart_Click(object sender, EventArgs e)
         {
-            string gameMode = "endless";
-            MainWindow mainWindow = new MainWindow(gameMode);   
-            mainWindow.Show();
+            PickGameMode pickGameMode = new PickGameMode();
+            pickGameMode.Show();
             Visible = false;
         }
 
-        private void btnBestOf_Click(object sender, EventArgs e)
+        private void picStart_Click(object sender, MouseEventArgs e)
         {
-            PickBestOf pickBestOf = new PickBestOf();
-            pickBestOf.Show();
+            
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            PickGameMode pickGameMode = new PickGameMode();
+            pickGameMode.Show();
             Visible = false;
+        }
+
+        private void Start_Load(object sender, EventArgs e)
+        {
+          
         }
     }
 }

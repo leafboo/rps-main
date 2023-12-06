@@ -63,6 +63,26 @@ namespace rockPaperScissors.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap background_dark_mode {
+            get {
+                object obj = ResourceManager.GetObject("background-dark-mode", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gamemode_dark_mode {
+            get {
+                object obj = ResourceManager.GetObject("gamemode-dark-mode", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap paper_emoji {
             get {
                 object obj = ResourceManager.GetObject("paper-emoji", resourceCulture);

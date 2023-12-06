@@ -190,5 +190,12 @@ namespace rockPaperScissors
         {
 
         }
+
+        private void btnChangeGameMode_Click(object sender, EventArgs e)
+        {
+            Start start = new Start();
+            start.Show();
+            Visible = false;
+        }
     }
 }
