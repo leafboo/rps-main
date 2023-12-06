@@ -152,5 +152,11 @@
   <ItemGroup>
     <None Include="Resources\menu-button.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\you lose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\you win%281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

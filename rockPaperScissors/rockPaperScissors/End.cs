@@ -18,7 +18,15 @@ namespace rockPaperScissors
         {
             this.result = result;
             InitializeComponent();
-            lblResult.Text = result;
+            
+            if (result == "win")
+            {
+                picResult.Image = Properties.Resources.you_win_1_;
+            } 
+            else if (result == "lose")
+            {
+                picResult.Image = Properties.Resources.you_lose;
+            }
         }
 
         private void btnNo_Click(object sender, EventArgs e)

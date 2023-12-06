@@ -37,9 +37,9 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(298, 230);
+            this.pictureBox2.Location = new System.Drawing.Point(377, 296);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(117, 59);
+            this.pictureBox2.Size = new System.Drawing.Size(164, 83);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
@@ -52,7 +52,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = global::rockPaperScissors.Properties.Resources.background_dark_mode;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(705, 415);
+            this.ClientSize = new System.Drawing.Size(929, 522);
             this.Controls.Add(this.pictureBox2);
             this.DoubleBuffered = true;
             this.Name = "Start";

@@ -157,7 +157,7 @@ namespace rockPaperScissors
             {
                 delayTimer.Stop(); // Stop the timer
                                    // Code to execute after the 2-second delay
-                result = "You win!";
+                result = "win";
                 End end = new End(result);
                 end.Show();
                 Visible = false;
@@ -173,7 +173,7 @@ namespace rockPaperScissors
             {
                 delayTimer.Stop(); // Stop the timer
                                    // Code to execute after the 2-second delay
-                result = "You Lose!";
+                result = "lose";
                 End end = new End(result);
                 end.Show();
                 Visible = false;
