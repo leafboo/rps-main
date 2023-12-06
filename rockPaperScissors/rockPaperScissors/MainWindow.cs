@@ -48,7 +48,7 @@ namespace rockPaperScissors
 
             updateTextAndImage(playerChoice, PLAYER_PIC);
             updateTextAndImage(computerChoice,CPU_PIC);
-            checkGame();
+            
         }
         private void updateTextAndImage(String text, PictureBox pic)
         {
@@ -160,7 +160,7 @@ namespace rockPaperScissors
                             break;
                     }
 
-                    
+                    checkGame();
                 }
             };
 
