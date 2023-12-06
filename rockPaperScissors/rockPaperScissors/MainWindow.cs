@@ -52,42 +52,124 @@ namespace rockPaperScissors
         }
         private void updateTextAndImage(String text, PictureBox pic)
         {
+            
             if (pic == PLAYER_PIC)
             {
-                switch (text)
-                {
-                    case "R":
-                        pic.Image = Properties.Resources.rock_emoji;
-                        break;
-                    case "P":
-                        pic.Image = Properties.Resources.paper_emoji;
-                        break;
-                    case "S":
-                        pic.Image = Properties.Resources.scissors_blue;
-                        break;
-
-                }
+               animateHandBlue(text, pic);
             }
             else
             {
-                switch (text)
-                {
-                    case "R":
-                        pic.Image = Properties.Resources.rock_emoji;
-                        break;
-                    case "P":
-                        pic.Image = Properties.Resources.paper_emoji;
-                        break;
-                    case "S":
-                        pic.Image = Properties.Resources.scissors_pink;
-                        break;
-
-                }
+                animateHandRed(text, pic);
             }
 
 
 
         }
+
+        private void animateHandRed(string text, PictureBox pic)
+        {
+            List<Image> animationImages = new List<Image>
+    {
+        Properties.Resources.rock_red_final_top,
+        Properties.Resources.rock_red_final,
+        Properties.Resources.rock_red_final_top,
+        Properties.Resources.rock_red_final,
+        Properties.Resources.rock_red_final_top,
+        Properties.Resources.rock_red_final
+    };
+
+            int currentIndex = 0;
+
+            Timer animationTimer = new Timer();
+            animationTimer.Interval = 250; // Set the interval to 250 milliseconds (.25 second)
+            animationTimer.Tick += (sender, e) =>
+            {
+                // Display the current animation image
+                pic.Image = animationImages[currentIndex];
+
+                currentIndex++;
+
+                // If reached the end of the animation, stop the timer
+                if (currentIndex >= animationImages.Count)
+                {
+                    animationTimer.Stop();
+                    animationTimer.Dispose();
+
+                    // Set the final image based on the player's choice
+                    switch (text)
+                    {
+                        case "R":
+                            pic.Image = Properties.Resources.rock_red_final;
+                            break;
+                        case "P":
+                            pic.Image = Properties.Resources.paper_red_final;
+                            break;
+                        case "S":
+                            pic.Image = Properties.Resources.scissor_red_final;
+                            break;
+                    }
+
+                    // Start the timer for the delay before checkGame()
+                    StartCheckGameTimer();
+                }
+            };
+
+            // Start the timer
+            animationTimer.Start();
+        }
+
+        private void animateHandBlue(string text, PictureBox pic)
+        {
+            List<Image> animationImages = new List<Image>
+    {
+        Properties.Resources.rock_blue_final_top,
+        Properties.Resources.rock_blue_final,
+        Properties.Resources.rock_blue_final_top,
+        Properties.Resources.rock_blue_final,
+        Properties.Resources.rock_blue_final_top,
+        Properties.Resources.rock_blue_final
+    };
+
+            int currentIndex = 0;
+
+            Timer animationTimer = new Timer();
+            animationTimer.Interval = 250; // Set the interval to 250 milliseconds (.25 second)
+            animationTimer.Tick += (sender, e) =>
+            {
+                // Display the current animation image
+                pic.Image = animationImages[currentIndex];
+
+                currentIndex++;
+
+                // If reached the end of the animation, stop the timer
+                if (currentIndex >= animationImages.Count)
+                {
+                    animationTimer.Stop();
+                    animationTimer.Dispose();
+
+                    // Set the final image based on the player's choice
+                    switch (text)
+                    {
+                        case "R":
+                            pic.Image = Properties.Resources.rock_blue_final;
+                            break;
+                        case "P":
+                            pic.Image = Properties.Resources.paper_blue_final;
+                            break;
+                        case "S":
+                            pic.Image = Properties.Resources.scissor_blue_final;
+                            break;
+                    }
+
+                    // Start the timer for the delay before checkGame()
+                    StartCheckGameTimer();
+                }
+            };
+
+            // Start the timer
+            animationTimer.Start();
+        }
+
 
         private void checkGame()
         {
@@ -165,6 +247,21 @@ namespace rockPaperScissors
 
             delayTimer.Start(); // Start the timer
         }
+        private void StartCheckGameTimer()
+        {
+            Timer checkGameTimer = new Timer();
+            checkGameTimer.Interval = 1250; // Set the interval to 1250 milliseconds (1.25 seconds)
+            checkGameTimer.Tick += (sender, e) =>
+            {
+                checkGameTimer.Stop(); // Stop the timer
+
+                // Code to execute after the 1.25-second delay
+                checkGame();
+            };
+
+            // Start the timer
+            checkGameTimer.Start();
+        }
         private void executeAfterTimeLose(string result)
         {
             Timer delayTimer = new Timer();
@@ -206,6 +303,11 @@ namespace rockPaperScissors
             Start start = new Start();
             start.Show();
             Visible = false;
+        }
+
+        private void CPU_PIC_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

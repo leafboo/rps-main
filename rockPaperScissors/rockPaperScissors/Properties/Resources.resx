@@ -118,32 +118,29 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="paper-emoji" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\paper-emoji.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rock-blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rock-blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="background-best-of" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\background-best-of.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="menu-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="scissors-blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\scissors-blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="paper-button(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\paper-button(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rock-button(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rock-button(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gamemode-dark-mode" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gamemode-dark-mode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="scissor-red-final" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\scissor-red-final.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rock-emoji" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rock-emoji.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="paper-red-final" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paper-red-final.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="scissors-pink" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\scissors-pink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="you win(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\you win(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="background-dark-mode" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\background-dark-mode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="menu-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menu-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rock-red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rock-red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="scissor-button(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\scissor-button(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,13 +148,58 @@
   <data name="5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rock-button(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rock-button(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="scissors-pink" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\scissors-pink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rock-emoji" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rock-emoji.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paper-emoji" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paper-emoji.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="background-best-of" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background-best-of.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rock-blue-final" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rock-blue-final.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rock-red-final" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rock-red-final.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rock-blue(top)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rock-blue(top).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paper-red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paper-red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="background-dark-mode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background-dark-mode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="scissor-blue-final" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\scissor-blue-final.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="you lose" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\you lose.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="you win(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\you win(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rock-red(top)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rock-red(top).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rock-red-final-top" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rock-red-final-top.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paper-blue-final" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paper-blue-final.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gamemode-dark-mode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gamemode-dark-mode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paper-blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paper-blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paper-button(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paper-button(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rock-blue-final-top" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rock-blue-final-top.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -158,5 +158,47 @@
   <ItemGroup>
     <None Include="Resources\you win%281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paper-red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rock-red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rock-blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paper-blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rock-red%28top%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rock-blue%28top%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paper-red-final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rock-red-final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scissor-red-final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rock-red-final-top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paper-blue-final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rock-blue-final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scissor-blue-final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rock-blue-final-top.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
