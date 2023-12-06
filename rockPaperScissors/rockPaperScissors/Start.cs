@@ -7,15 +7,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace rockPaperScissors
 {
     public partial class Start : Form
     {
-        
+        int continueMusic = 0;
+        SoundPlayer player = new SoundPlayer();
         public Start()
         {
             InitializeComponent();
+            player.SoundLocation = @"C:\Users\Desktop\Desktop\rps-school-main\rockPaperScissors\rockPaperScissors\bin\Debug\videoplayback1.wav";
+
+        }
+        public Start(int continueMusic)
+        {
+            this.continueMusic = continueMusic;
+            InitializeComponent();
+            
         }
 
         private void btnStart_Click(object sender, EventArgs e)
@@ -39,7 +49,12 @@ namespace rockPaperScissors
 
         private void Start_Load(object sender, EventArgs e)
         {
-          
+            if(continueMusic == 0)
+            {
+                player.Play();
+                player.PlayLooping();
+            }
+            
         }
     }
 }

@@ -54,7 +54,8 @@ namespace rockPaperScissors
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            Start start = new Start();
+            int continueMusic = 1;
+            Start start = new Start(continueMusic);
             start.Show();
             Visible = false;
         }
