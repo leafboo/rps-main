@@ -103,6 +103,16 @@ namespace rockPaperScissors.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap paper_button_1_ {
+            get {
+                object obj = ResourceManager.GetObject("paper-button(1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap paper_emoji {
             get {
                 object obj = ResourceManager.GetObject("paper-emoji", resourceCulture);
@@ -113,9 +123,29 @@ namespace rockPaperScissors.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap rock_button_1_ {
+            get {
+                object obj = ResourceManager.GetObject("rock-button(1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap rock_emoji {
             get {
                 object obj = ResourceManager.GetObject("rock-emoji", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap scissor_button_1_ {
+            get {
+                object obj = ResourceManager.GetObject("scissor-button(1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

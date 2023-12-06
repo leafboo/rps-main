@@ -38,7 +38,7 @@ namespace rockPaperScissors
        
         private void MakeChoiceEvent(object sender, EventArgs e)
         {
-            Button tempButton = sender as Button;
+            PictureBox tempButton = sender as PictureBox;
 
             playerChoice = (string)tempButton.Tag;
 
@@ -193,8 +193,13 @@ namespace rockPaperScissors
 
         private void btnChangeGameMode_Click(object sender, EventArgs e)
         {
-            Start start = new Start();
-            start.Show();
+           
+        }
+
+        private void btnChangeMode_Click(object sender, EventArgs e)
+        {
+            PickGameMode pickGameMode = new PickGameMode();
+            pickGameMode.Show();    
             Visible = false;
         }
     }

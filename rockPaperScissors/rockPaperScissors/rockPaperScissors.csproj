@@ -140,5 +140,14 @@
   <ItemGroup>
     <None Include="Resources\background-best-of.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rock-button%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paper-button%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scissor-button%281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
