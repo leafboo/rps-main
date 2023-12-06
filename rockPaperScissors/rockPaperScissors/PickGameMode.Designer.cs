@@ -28,29 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnEndless = new System.Windows.Forms.Button();
-            this.btnBestOf = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PickGameMode));
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnEndless
+            // pictureBox1
             // 
-            this.btnEndless.Location = new System.Drawing.Point(205, 259);
-            this.btnEndless.Name = "btnEndless";
-            this.btnEndless.Size = new System.Drawing.Size(75, 23);
-            this.btnEndless.TabIndex = 1;
-            this.btnEndless.Text = "Endless";
-            this.btnEndless.UseVisualStyleBackColor = true;
-            this.btnEndless.Click += new System.EventHandler(this.btnEndless_Click);
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(353, 231);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(237, 101);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.btnBestOf_Click_1);
             // 
-            // btnBestOf
+            // pictureBox2
             // 
-            this.btnBestOf.Location = new System.Drawing.Point(400, 259);
-            this.btnBestOf.Name = "btnBestOf";
-            this.btnBestOf.Size = new System.Drawing.Size(75, 23);
-            this.btnBestOf.TabIndex = 2;
-            this.btnBestOf.Text = "Best of";
-            this.btnBestOf.UseVisualStyleBackColor = true;
-            this.btnBestOf.Click += new System.EventHandler(this.btnBestOf_Click_1);
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(110, 231);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(237, 101);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.btnEndless_Click);
             // 
             // PickGameMode
             // 
@@ -60,18 +67,19 @@
             this.BackgroundImage = global::rockPaperScissors.Properties.Resources.gamemode_dark_mode;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(705, 409);
-            this.Controls.Add(this.btnBestOf);
-            this.Controls.Add(this.btnEndless);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
             this.Name = "PickGameMode";
             this.Text = "PickGameMode";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnEndless;
-        private System.Windows.Forms.Button btnBestOf;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
