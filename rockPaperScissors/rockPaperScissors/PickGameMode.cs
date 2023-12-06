@@ -28,7 +28,7 @@ namespace rockPaperScissors
 
         private void btnBestOf_Click_1(object sender, EventArgs e)
         {
-            PickBestOf pickBestOf = new PickBestOf();
+            bestOfFive pickBestOf = new bestOfFive();
             pickBestOf.Show();
             Visible = false;
         }

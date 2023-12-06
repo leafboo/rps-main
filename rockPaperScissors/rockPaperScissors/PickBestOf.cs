@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace rockPaperScissors
 {
-    public partial class PickBestOf : Form
+    public partial class bestOfFive : Form
     {
         string gameMode = "bestOf";
-        public PickBestOf()
+        public bestOfFive()
         {
             InitializeComponent();
         }
@@ -40,6 +40,16 @@ namespace rockPaperScissors
             MainWindow mainWindow = new MainWindow(gameMode, bestOf);
             mainWindow.Show();
             Visible = false;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void PickBestOf_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }
